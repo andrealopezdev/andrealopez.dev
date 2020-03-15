@@ -85,14 +85,8 @@ nav{
   background: 008484;
   top:0;
   width: 100%;
-}
-
-@media(min-width: 450px){
-  nav{
   position: fixed;
 }
-}
-
 
 nav a {
   color: #FFFFFF;
@@ -107,34 +101,26 @@ nav a:hover {
 }
 
 .nav-name {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   padding-right: 22px;
 }
 
 
-@media(min-width: 450px){
- .nav-name {
+@media(max-width: 444px){
+ /* .nav-name {
   font-size: 25px;
-}
+} */
 }
 
-.ftr-menu-item,
-.nav-menu-item,
-#nav-menu  {
-  font-size: 13px;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-@media(min-width: 340px){
 .ftr-menu-item,
 .nav-menu-item,
 #nav-menu  {
   font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-}
-
 
 #nav-menu {
   padding-top: 18px;
