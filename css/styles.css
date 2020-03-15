@@ -145,38 +145,42 @@ nav a:hover {
 /*header*/
 /* header {
   padding-top: 50px;
-}
-
+} */
+/*
 header h1, header p {
   margin: 0;
 } */
 
-.box {
+.circle {
   background-color: #444;
   color: #fff;
   border-radius: 50%;
-  /*! padding: 20px; */
   font-size: 150%;
   height: calc(100vw - 100px);
   width: calc(100vw - 100px);
   object-fit: cover;
 }
 
-/* .box:nth-child(even) {
-  background-color: #ccc;
-  color: #000;
-} */
-
+.box {
+  background-color: #444;
+  color: #fff;
+  /* border-radius: 50%; */
+  font-size: 150%;
+  height: calc(100vw - 100px);
+  width: calc(100vw - 100px);
+  object-fit: cover;
+}
 @media (min-width: 250px){
   .wrapper {
-  /*! width: 600px; */
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
 }
-
-
+  .circle{
+    width: calc(calc(100vw - 100px - 10px)/2);
+    height: calc(calc(100vw - 100px - 10px)/2);
+  }
   .box{
     width: calc(calc(100vw - 100px - 10px)/2);
     height: calc(calc(100vw - 100px - 10px)/2);
@@ -192,8 +196,10 @@ header h1, header p {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 }
-
-
+  .circle{
+    width: calc(calc(100vw - 100px - 30px)/4);
+    height: calc(calc(100vw - 100px - 30px)/4);
+  }
   .box{
     width: calc(calc(100vw - 100px - 30px)/4);
     height: calc(calc(100vw - 100px - 30px)/4);
@@ -201,11 +207,14 @@ header h1, header p {
 }
 
  @media (min-width: 950px){
-    .box{
+    .circle{
     width: calc(calc(950px - 100px - 30px)/4);
     height: calc(calc(950px - 100px - 30px)/4);
   }
-
+  .box{
+  width: calc(calc(950px - 100px - 30px)/4);
+  height: calc(calc(950px - 100px - 30px)/4);
+}
 }
 
 /* Blog ============================== */
