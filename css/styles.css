@@ -194,7 +194,7 @@ header h1, header p {
 }
 
 /* Blog ============================== */
-header:{
+header{
   display: block
 }
 #header-tag{
@@ -226,7 +226,9 @@ header:{
 }
 /* Experience
 ============================== */
-
+.wrapper a {
+  text-align: center;
+}
 /* Connect
 ============================== */
 
